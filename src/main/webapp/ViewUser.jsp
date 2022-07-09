@@ -227,12 +227,29 @@
                                 </div>
                             </div>
                         </a>
-                        <img style="height: 20px;width: 20px;border-radius: 50%;margin-left: 8px" src="https://cdn.popsww.com/blog/sites/2/2022/05/phim-cua-lee-min-ho.jpg" alt="">
-                        <span id="userName">${username}</span>
-                        <i style="margin-left:5px ;margin-bottom: 3px;cursor: pointer" class="fa-solid fa-sort-down"></i>
                         <%--                         <a class="btn-theme btn" href="#"><i class="fas fa-ticket-alt"></i>&nbsp;&nbsp;Buy Ticket</a>--%>
 
                     </div>
+
+
+                    <ul class="navbar-nav">
+                        <li style="margin: 0 10px" class="nav-item nav-item-arrow-down nav-hover-show-sub">
+                            <a class="nav-link" href="#">
+                                <span id="userName" style="font-size: x-large">${username}
+                                                        <img style="height: 50px;width: 50px ;border-radius: 50%;margin-left: 8px" src="https://cdn.popsww.com/blog/sites/2/2022/05/phim-cua-lee-min-ho.jpg" alt="">
+                                </span>
+                            </a>
+                            <div class="nav-arrow"><i class="fas fa-chevron-down"></i></div>
+                            <ul class="collapse nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/login?action=logout">Đăng Xuất</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="homepage-2.html">Thay Ảnh Đại Diện</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
             </nav>
         </div>
