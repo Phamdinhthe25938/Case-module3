@@ -231,6 +231,7 @@
                         <span id="userName">${username}</span>
                         <i style="margin-left:5px ;margin-bottom: 3px;cursor: pointer" class="fa-solid fa-sort-down"></i>
                         <%--                         <a class="btn-theme btn" href="#"><i class="fas fa-ticket-alt"></i>&nbsp;&nbsp;Buy Ticket</a>--%>
+
                     </div>
                 </div>
             </nav>
@@ -262,7 +263,7 @@
                                             </a>
                                         </div>
                                         <h4 class="entity-title" style="font-size: 20px;color:mediumturquoise;">
-                                            <a class="content-link" href="movie-info-sidebar-right.html">${f.tenPhim}</a>
+                                            <a class="content-link" href="/dichvu?action=movie&cinema=${f.tenPhim}&username=${username}">${f.tenPhim}</a>
                                         </h4>
                                         <div class="entity-category" style="font-size: 13px;color:azure ">
                                             <a class="content-link" href="movies-blocks.html">${f.loaiPhim}</a>,
@@ -272,8 +273,8 @@
                                             <div class="info-lines">
                                                 <div class="info info-short">
                                                     <span class="text-theme info-icon"><i class="fas fa-star"></i></span>
-                                                    <span class="info-text">8,1</span>
-                                                    <span class="info-rest">/10</span>
+                                                    <span class="info-text">${f.star}</span>
+                                                    <span class="info-rest">/5</span>
                                                 </div>
                                                 <div class="info info-short">
                                                     <span class="text-theme info-icon"><i class="fas fa-clock"></i></span>
@@ -320,7 +321,7 @@
                         </div>
                         <div class="d-over bg-theme-lighted collapse animated faster" data-show-class="fadeIn show" data-hide-class="fadeOut show">
                             <div class="entity-play">
-                                <a class="action-icon-theme action-icon-bordered rounded-circle" href="https://www.youtube.com/watch?v=d96cjJhvlMA" data-magnific-popup="iframe">
+                                <a class="action-icon-theme action-icon-bordered rounded-circle" href="${f.trailer}" data-magnific-popup="iframe">
                                     <span class="icon-content"><i class="fas fa-play"></i></span>
                                 </a>
                             </div>
@@ -328,7 +329,7 @@
                     </div>
                     <div class="entity-content" id="entityContent">
                         <h4 class="entity-title">
-                            <a class="content-link" href="movie-info-sidebar-right.html">${f.tenPhim}</a>
+                            <a class="content-link" href="/dichvu?action=movie&cinema=${f.tenPhim}&username=${username}">${f.tenPhim}</a>
                         </h4>
                         <div class="entity-category" style="display: flex">
                             <div style="display: flex;flex-direction: column">
@@ -346,8 +347,8 @@
                             <div class="info-lines">
                                 <div class="info info-short">
                                     <span class="text-theme info-icon"><i class="fas fa-star"></i></span>
-                                    <span class="info-text">8,1</span>
-                                    <span class="info-rest">/10</span>
+                                    <span class="info-text">${f.star}</span>
+                                    <span class="info-rest">/5</span>
                                 </div>
                                 <div class="info info-short">
                                     <span class="text-theme info-icon"><i class="fas fa-clock"></i></span>

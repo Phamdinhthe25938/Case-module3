@@ -64,6 +64,23 @@ public class Film {
         this.star = star;
     }
 
+    public Film(int idPhim, String tenPhim, String thoiGian, String loaiPhim, String daoDien, String quocGia, String dienVien, String nhaSX, Date ngayKhoiChieu, String moTa, String trailer, String img, int giaPhim, double star) {
+        this.idPhim = idPhim;
+        this.tenPhim = tenPhim;
+        this.thoiGian = thoiGian;
+        this.loaiPhim = loaiPhim;
+        this.daoDien = daoDien;
+        this.quocGia = quocGia;
+        this.dienVien = dienVien;
+        this.nhaSX = nhaSX;
+        this.ngayKhoiChieu = ngayKhoiChieu;
+        this.moTa = moTa;
+        this.trailer = trailer;
+        this.img = img;
+        this.giaPhim = giaPhim;
+        this.star = star;
+    }
+
     public double getStar() {
         return star;
     }

@@ -46,7 +46,8 @@ public class FilmDao implements IFilmDao {
                 String trailer = resultSet.getString("trailer");
                 String img = resultSet.getString("img");
                 int giaPhim = resultSet.getInt("giaPhim");
-                films.add(new Film(idPhim,tenPhim,thoiGian,loaiPhim,daoDien,quocGia,dienVien,nhaSX,ngayKhoiChieu,moTa,trailer,img,giaPhim));
+                double star = resultSet.getDouble("star");
+                films.add(new Film(idPhim,tenPhim,thoiGian,loaiPhim,daoDien,quocGia,dienVien,nhaSX,ngayKhoiChieu,moTa,trailer,img,giaPhim,star));
             }
         } catch (SQLException e) {
             throw new RuntimeException(e);
