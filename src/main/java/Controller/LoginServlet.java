@@ -23,6 +23,18 @@ public class LoginServlet extends HttpServlet {
     AccountService userService = new AccountService();
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        String action = req.getParameter("action");
+        if (action == null) {
+            action = "";
+        }
+        RequestDispatcher requestDispatcher;
+        switch (action) {
+            case"logout":
+                Filter.account=null;
+                requestDispatcher = req.getRequestDispatcher("/index.jsp");
+                requestDispatcher.forward(req, resp);
+                break;
+        }
     }
 
     @Override
